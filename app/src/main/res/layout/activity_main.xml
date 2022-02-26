@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ImageEgg"
+        android:layout_width="344dp"
+        android:layout_height="460dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/th" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="301dp"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toTopOf="@+id/ImageEgg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TimeTextField"
+        style="@android:style/Widget.Holo.AutoCompleteTextView"
+        android:layout_width="217dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Time"
+        android:textColor="#0820CE"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ImageEgg" />
+
+    <Button
+        android:id="@+id/StartStopButton"
+        android:layout_width="169dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="buttonStartStop"
+        android:text="Start"
+        android:textColor="#0A28D6"
+        android:textColorHighlight="#EBD206"
+        android:textColorHint="#DDC612"
+        app:layout_constraintBottom_toBottomOf="@+id/ImageEgg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
